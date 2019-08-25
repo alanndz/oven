@@ -1,11 +1,12 @@
-FROM debian:latest
+FROM ubuntu:latest
 LABEL maintainer "Ahmad Thoriq Najahi <najahiii@outlook.co.id>"
 
 RUN apt-get update && apt-get install -y \
-	gcc \
+	clang \
+	llvm \
+	llvm-dev \
 	libc6-dev \
 	git \
-	g++ \
 	gperf \
 	bison \
 	flex \
@@ -41,7 +42,9 @@ RUN apt-get update && apt-get install -y \
 	python \
 	m4 \
 	zlib1g-dev
-	
+
+RUN apt-get remove -y gcc g++
+RUN apt-get autoremove -y
 RUN apt-get upgrade -y
 ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
