@@ -78,3 +78,11 @@ RUN apt-get upgrade -y
 ENV TZ=Asia/Jakarta
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 RUN date
+
+# Run ninja-build script
+COPY scripts/ninja.sh /
+RUN bash /ninja.sh && \
+    rm /ninja.sh
+
+# Check ninja
+RUN ninja --version
