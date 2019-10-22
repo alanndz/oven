@@ -86,3 +86,7 @@ RUN bash /ninja.sh && \
 
 # Check ninja
 RUN ninja --version
+
+# GIT
+RUN git config --global user.email "najahiii@outlook.co.id"
+RUN git config --global user.name "Ahmad Thoriq Najahi"
