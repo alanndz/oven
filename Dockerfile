@@ -67,5 +67,8 @@ RUN apt-get update -qq && \
 	zlib1g-dev \
 	zstd
 
-# Clang
-RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
+# Clang Najahii
+# RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
+
+# Clang from Haseo97
+RUN git clone https://github.com/Haseo97/Clang-10.0.0 -b clang-10.0.0 --depth=1 /root/clang
