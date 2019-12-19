@@ -67,13 +67,5 @@ RUN apt-get update -qq && \
 	zlib1g-dev \
 	zstd
 
-# Git
-RUN git config --global user.email "najahiii@outlook.co.id"
-RUN git config --global user.name "Ahmad Thoriq Najahi"
-
 # Clang
 RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
-
-# GCC
-RUN git clone https://github.com/najahiiii/priv-toolchains.git -b elf/gcc-10.0.0/arm --depth=1 /root/toolchain/ARM
-RUN git clone https://github.com/najahiiii/priv-toolchains.git -b elf/gcc-10.0.0/arm64 --depth=1 /root/toolchain/ARM64
