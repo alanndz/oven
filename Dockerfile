@@ -1,8 +1,8 @@
 FROM ubuntu:focal
 LABEL maintainer "Ahmad Thoriq Najahi <najahiii@outlook.co.id>"
 
-# Indonesian timezone (GMT+7)	
-ENV TZ=Asia/Jakarta
+# Indonesian timezone (GMT+8)	
+ENV TZ=Asia/Makassar
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # Tidy-up
