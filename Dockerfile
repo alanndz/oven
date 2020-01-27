@@ -68,10 +68,13 @@ RUN apt-get update -qq && \
 	zstd
 
 # Clang Najahii
-# RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
+RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
 
 # Clang from Haseo97
-RUN git clone https://github.com/Haseo97/Clang-10.0.0 -b clang-10.0.0 --depth=1 /root/clang
+# RUN git clone https://github.com/Haseo97/Clang-10.0.0 -b clang-10.0.0 --depth=1 /root/clang
+
+# Proton Clang 10
+RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b master --depth=1 /root/proton-10
 
 # Proton Clang 11
-RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b proton-clang-11 --depth=1 /root/clang-11
+RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b proton-clang-11 --depth=1 /root/proton-11
