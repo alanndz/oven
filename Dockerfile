@@ -67,6 +67,10 @@ RUN apt-get update -qq && \
 	zlib1g-dev \
 	zstd
 
+# My Github
+RUN git config --global user.name "alanndz"
+RUN git config --global user.email "alanmahmud0@gmail.com"
+
 # Clang Najahii
 RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
 
