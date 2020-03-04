@@ -75,7 +75,7 @@ RUN git config --global user.email "alanmahmud0@gmail.com"
 RUN git clone https://github.com/NusantaraDevs/clang.git -b dev/10.0 --depth=1 /root/clang
 
 # Clang from Haseo97
-# RUN git clone https://github.com/Haseo97/Clang-10.0.0 -b clang-10.0.0 --depth=1 /root/clang
+RUN git clone https://github.com/Haseo97/Clang-11.0.0 --depth=1 /root/pendulum-clang
 
 # Proton Clang 10
 RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b master --depth=1 /root/proton-10
