@@ -84,4 +84,4 @@ RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b master --
 RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b proton-clang-11 --depth=1 /root/proton-11
 
 # Avalon Clang 11
-RUN git clone https://github.com/Haseo97/Avalon-Clang-11.0.1 -b 11.0.1 --depth=1 root/avalon-11
+RUN git clone https://github.com/Haseo97/Avalon-Clang-11.0.1 -b 11.0.1 --depth=1 /root/avalon-11
