@@ -1,5 +1,5 @@
 FROM ubuntu:focal
-LABEL maintainer "Ahmad Thoriq Najahi <najahiii@outlook.co.id>"
+LABEL maintainer "alanndz <alanmahmud0@gmail.com>"
 
 # Indonesian timezone (GMT+8)	
 ENV TZ=Asia/Makassar
