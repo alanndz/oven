@@ -82,9 +82,3 @@ RUN git clone https://github.com/HANA-CI-Build-Project/proton-clang -b proton-cl
 
 # Proton Clang Latest
 RUN git clone https://github.com/kdrag0n/proton-clang -b master --depth=1 /root/proton-latest
-
-# Avalon Clang 11
-RUN git clone https://github.com/Haseo97/Avalon-Clang-11.0.1 -b 11.0.1 --depth=1 /root/avalon-11
-
-# Twisted Clang 11
-RUN git clone https://github.com/TwistedPrime/twisted-clang -b master --depth=1 /root/twisted-11
