@@ -23,6 +23,7 @@ RUN apt-get update -qq && \
 	coreutils \
 	cmake \
 	curl \
+	cpio \
 	expect \
 	flex \
 	g++ \
